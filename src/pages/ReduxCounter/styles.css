@@ -1,0 +1,31 @@
+.btn {
+    border: none;
+    background-color: #272D2D;
+    padding: 14px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #B8C5D6;
+
+
+}
+
+.box {
+    background-color: #23CE6B;
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    width: 100px;
+    left: 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.anim1 {
+    left: 200px;
+    transition: all 0.4s ease-in-out;
+}
