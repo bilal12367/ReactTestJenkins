@@ -8,8 +8,8 @@ pipeline {
                 echo 'Checking out source code...'
                 script {
 
-                    bash 'chmod +x build.sh'
-                    bash './build.sh'
+                    sh 'chmod +x build.sh'
+                    sh './build.sh'
                 }
             }
         }
