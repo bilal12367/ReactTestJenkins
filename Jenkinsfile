@@ -6,18 +6,18 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out source code...'
-                script {
-
-                    sh 'chmod +x build.sh'
-                    sh './build.sh'
-                }
+                
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Build steps go here
+                script {
+
+                    sh 'chmod +x build.sh'
+                    sh './build.sh'
+                }
             }
         }
 
