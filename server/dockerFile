@@ -8,3 +8,4 @@ RUN npm install
 #Hello
 COPY . .
 
+RUN npm config set registry http://registry.npmjs.org/
