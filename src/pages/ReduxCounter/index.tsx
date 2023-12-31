@@ -13,7 +13,7 @@ const ReduxCounter = () => {
             <div style={{ position: 'relative', overflow: 'hidden' }}>
                 <button className='btn' onClick={() => { dispatch(actions.incrementCounter(3)) }}>Increment</button>
                 <button className='btn' onClick={() => { dispatch(actions.decrementCounter(3)) }}>Decrement</button>
-                <button className='btn' onClick={() => { dispatch(actions.setName('Bilal')) }}>Set Name</button>
+                <button className='btn' onClick={() => { dispatch(actions.setName('MAJID BHAI')) }}>Set Name</button>
                 <div className={'box' + (counter > 5 ? ' anim1' : '')}>
                 
                 </div>
