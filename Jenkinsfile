@@ -32,6 +32,9 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 // Deployment steps go here
+                script {
+                    sh 'nohup npm start > /dev/null 2>&1 &'
+                }
             }
         }
     }

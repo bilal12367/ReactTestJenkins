@@ -20,4 +20,3 @@ npm run build
 mv build ./server
 cd server
 npm install
-nohup npm start > /dev/null 2>&1 &
