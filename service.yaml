@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test_react_app_service
+spec:
+  selector:
+    app: test_react_app
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 6000
+    nodePort: 61110

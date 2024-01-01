@@ -10,3 +10,4 @@ RUN npm install
 #Hello
 COPY . .
 
+CMD [ "npm","start" ]
