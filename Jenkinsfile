@@ -33,8 +33,8 @@ pipeline {
                 // Deployment steps go here
                 script {
                     
-                    sh 'minikube kubectl apply -f deployment.yaml'
-                    sh 'minikube kubectl apply -f service.yaml'
+                    sh 'minikube kubectl -- apply -f deployment.yaml'
+                    sh 'minikube kubectl -- apply -f service.yaml'
                 }
             }
         }
