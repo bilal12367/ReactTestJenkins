@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 script {
-
+                    sh 'echo ${USER}'
                     sh 'docker-compose up -d'
                 }
             }
