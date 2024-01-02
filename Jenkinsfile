@@ -33,7 +33,9 @@ pipeline {
                 echo 'Deploying...'
                 // Deployment steps go here
                 script {
-                    sh 'nohup npm start > /dev/null 2>&1 &'
+                    // sh 'nohup npm start > /dev/null 2>&1 &'
+                    sh 'kubectl apply -f deployment.yaml'
+                    sh 'kubectl apply -f service.yaml'
                 }
             }
         }
