@@ -15,8 +15,7 @@ pipeline {
                 echo 'Building...'
                 script {
 
-                    sh 'chmod +x build.sh'
-                    sh './build.sh'
+                    sh 'docker-compose up -d'
                 }
             }
         }
