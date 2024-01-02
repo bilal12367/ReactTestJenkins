@@ -15,6 +15,6 @@ spec:
       containers:
       - name: test_react_app
         # image: skbilal1236/test_react_app:latest
-        image: React-App-Test:latest
+        image: react-app-test-image:latest
         ports:
         - containerPort: 5000

@@ -15,7 +15,7 @@ pipeline {
                 echo 'Building...'
                 script {
                     sh 'echo ${USER}'
-                    sh 'docker build -t React-App-Test .'
+                    sh 'docker build -t react-app-test-image .'
                 }
             }
         }
