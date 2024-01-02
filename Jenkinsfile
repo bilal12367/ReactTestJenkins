@@ -33,6 +33,7 @@ pipeline {
                 // Deployment steps go here
                 script {
                     // sh 'nohup npm start > /dev/null 2>&1 &'
+                    sh 'alias kubectl="minikube kubectl --'
                     sh 'kubectl apply -f deployment.yaml'
                     sh 'kubectl apply -f service.yaml'
                 }
