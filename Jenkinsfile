@@ -15,7 +15,7 @@ pipeline {
                 echo 'Building...'
                 script {
                     sh 'echo ${USER}'
-                    sh 'docker-compose up -d'
+                    sh 'docker build -t React-App-Test .'
                 }
             }
         }
