@@ -13,7 +13,7 @@ COPY . .
 
 RUN npm run build
 
-RUN rm -f ./server/build
+RUN rm -r ./server/build
 
 RUN mv build ./server
 
