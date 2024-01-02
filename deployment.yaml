@@ -6,15 +6,15 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: test_react_app
+      app: test-react-app
   template:
     metadata:
       labels:
-        app: test_react_app
+        app: test-react-app
     spec:
       containers:
-      - name: test_react_app
-        # image: skbilal1236/test_react_app:latest
+      - name: test-react-app
+        # image: skbilal1236/test-react-app:latest
         image: react-app-test-image:latest
         ports:
         - containerPort: 5000
